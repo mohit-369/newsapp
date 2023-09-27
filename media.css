@@ -1,0 +1,25 @@
+@media screen and ((min-width:380px) and (max-width:750px)) {
+
+    .nav-item{
+        display: none;
+
+
+    }
+    .search-bar{
+        display: none;
+    }
+    .hamburger{
+        display: inline;
+    }
+    .card{
+        width: 100%;
+        
+    }
+    .card-header img{
+        width: 100%;
+        height: 230px;
+    }
+    
+
+    
+}

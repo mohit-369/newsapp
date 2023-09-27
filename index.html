@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="shortcut icon" href="https://t3.ftcdn.net/jpg/01/79/14/62/360_F_179146215_NEoBhSC2oKw9hwX7K3hAkAPLZueAeGEs.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="https://kit.fontawesome.com/24ff3ad52f.js" crossorigin="anonymous"></script>
+</head> 
+<body>
+    <nav>
+        
+        <div class="main-nav flex container">
+            
+            
+            <a href="" class="company-logo" onliclik="reload()"><img src="https://t3.ftcdn.net/jpg/01/79/14/62/360_F_179146215_NEoBhSC2oKw9hwX7K3hAkAPLZueAeGEs.jpg" alt="company-logo"></a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="sports" onclick="onclicknav('ipl')">SPORTS</li>
+                    <li class="hover-link nav-item" id="science"onclick="onclicknav('science')">SCIENCE</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onclicknav('finance')">FINANCE</li>
+                    <li class="hover-link nav-item" id="political" onclick="onclicknav('political')">POLITICAL</li>
+                </ul>
+
+            </div>
+            <div class="search-bar flex"> 
+
+
+                <input type="text" class="news-input" id="searchtext" placeholder="eg science">
+
+
+                <button class="searchbutton" id="searchbutton">Search</button>
+
+            </div>
+            <!-- <i class="hamburger fa-solid fa-bars"></i> -->
+
+        </div>
+ 
+    </nav>
+    <!-- main  working start from here -->
+    <main>
+        <div class="card-container container flex" id="cards-container">
+            
+            
+            
+            
+
+        </div>
+ 
+    </main>
+    <template id="template-card-news">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeI4bHbvAq3ostK8ZMthlFbZ5Z91qF9BLUPM4rTBtj&s" alt="newsimage" id="news-image">
+            </div>
+            <div class="card-content">
+                <h3 class="news-titile" id="news-title">This is the title</h3>
+                <h6 class="news-source" id="news-source">end gaject 20/05/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque praesentium omnis iste voluptatum quas quo eligendi eum harum est repudiandae!</p>
+
+            </div>
+        </div>
+
+    </template>
+
+
+    
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
